@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="522.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autocamperrental.barChart">
+   <children>
+      <BarChart fx:id="barChart" layoutX="50.0" layoutY="46.0" prefHeight="400.0" prefWidth="689.0">
+        <xAxis>
+          <CategoryAxis fx:id="categoryXfirst" label="Category 1" side="BOTTOM" />
+          <CategoryAxis fx:id="categoryXsecond" label="Category 2" side="BOTTOM" />
+          <CategoryAxis fx:id="categoryXthird" label="Category 3" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="categoryY" label="Average" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

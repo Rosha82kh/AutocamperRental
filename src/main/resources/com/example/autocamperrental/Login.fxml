@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="518.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autocamperrental.Login">
+   <children>
+      <ImageView fitHeight="175.0" fitWidth="213.0" layoutX="294.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo4.png" />
+         </image></ImageView>
+      <VBox layoutX="325.0" layoutY="221.0" prefHeight="99.0" prefWidth="258.0">
+         <children>
+            <TextField fx:id="email_txt" prefHeight="51.0" prefWidth="258.0" promptText="Enter your email" />
+            <PasswordField fx:id="passowrd_txt" prefHeight="48.0" prefWidth="258.0" promptText="Enter your password" />
+         </children>
+      </VBox>
+      <VBox layoutX="189.0" layoutY="221.0" prefHeight="99.0" prefWidth="137.0">
+         <children>
+            <Label prefHeight="52.0" prefWidth="194.0" text="Email" textFill="#ff5757">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label prefHeight="52.0" prefWidth="187.0" text="Password" textFill="#ff5757">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="login_btn" layoutX="222.0" layoutY="386.0" mnemonicParsing="false" onAction="#login" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: ffbd59;" text="Login" textAlignment="CENTER" textFill="#ff5757">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel_btn" layoutX="414.0" layoutY="386.0" mnemonicParsing="false" onAction="#cancel" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: ffbd59;" text="Cancel" textAlignment="CENTER" textFill="#ff5757">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblMessege" layoutX="368.0" layoutY="464.0" text=" " textFill="#0ab247" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="577.0" prefWidth="695.0" style="-fx-border-color: #ffdb59;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autocamperrental.LuxuryController">
+   <children>
+      <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="577.0" prefWidth="695.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="192.0" layoutX="265.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../logo4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #ffdb59;">
+               <children>
+                  <ImageView fitHeight="165.0" fitWidth="252.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../luxury1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="283.0" layoutY="8.0" prefHeight="35.0" prefWidth="430.0" text="Luxury AutoCamper with car carage" textFill="#141414">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="283.0" layoutY="49.0" text="1000 km free" />
+                  <Label layoutX="284.0" layoutY="128.0" text=" 120  Euro" textFill="#da0909">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="luxuryBook1_btn" layoutX="583.0" layoutY="126.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: ffdb59;" text="Book" textFill="#ff5757" />
+                  <Label layoutX="283.0" layoutY="70.0" text=" 10 cents per km" />
+               </children>
+            </Pane>
+            <Pane prefHeight="248.0" prefWidth="695.0" style="-fx-border-color: #ffdb59;">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="277.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../luxury2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="236.0" layoutY="89.0" prefHeight="21.0" prefWidth="314.0" text="Label" />
+                  <Text layoutX="280.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luxury furniture AutoCamper" wrappingWidth="387.6708984375">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="287.0" layoutY="147.0" text=" 120  Euro" textFill="#da0909">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="280.0" layoutY="58.0" text="1000 km free" />
+                  <Button fx:id="luxuryBook2_btn" layoutX="583.0" layoutY="147.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: ffdb59;" text="Book" textFill="#ff5757" />
+                  <Label layoutX="275.0" layoutY="75.0" text=" 10 cents per km" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

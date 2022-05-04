@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autocamperrental.Reservation">
+   <children>
+      <TabPane layoutY="174.0" prefHeight="432.0" prefWidth="793.0" style="-fx-background-color: #ff5737;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Luxury">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="694.0" style="-fx-background-color: #faf5e4;">
+                     <children>
+                        <VBox layoutX="350.0" layoutY="70.0" prefHeight="200.0" prefWidth="350.0">
+                           <children>
+                              <TextField prefHeight="52.0" prefWidth="323.0" />
+                              <TextField prefHeight="52.0" prefWidth="323.0" />
+                              <TextField prefHeight="52.0" prefWidth="323.0" />
+                              <TextField prefHeight="50.0" prefWidth="350.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="127.0" layoutY="79.0" prefHeight="196.0" prefWidth="209.0">
+                           <children>
+                              <Label prefHeight="50.0" prefWidth="350.0" text="Location" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="53.0" prefWidth="323.0" text="Week No" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="350.0" text="Driving license" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="53.0" prefWidth="323.0" text="Insurance" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button layoutX="274.0" layoutY="307.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="194.0" style="-fx-background-color: ffdb59;" text="Search" textAlignment="CENTER" textFill="#ff5757">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Standard">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="780.0" style="-fx-background-color: #faf5e4;">
+                     <children>
+                        <VBox layoutX="350.0" layoutY="70.0" prefHeight="200.0" prefWidth="350.0">
+                           <children>
+                              <TextField fx:id="location_txt" prefHeight="54.0" prefWidth="245.0" promptText="Type the name of city ">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <ComboBox fx:id="week_combo" prefHeight="49.0" prefWidth="350.0" />
+                              <TextField fx:id="driving_txt" prefHeight="45.0" prefWidth="245.0" promptText="Enter driving license number">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="insurance_txt" prefHeight="45.0" prefWidth="245.0" promptText="Full/Basic">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="105.0" layoutY="70.0" prefHeight="197.0" prefWidth="245.0">
+                           <children>
+                              <Label prefHeight="50.0" prefWidth="245.0" text="Location" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="245.0" text="Week No" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="245.0" text="Driving license" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="245.0" text="Insurance" textFill="#ff5757">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button fx:id="search_btn" layoutX="301.0" layoutY="305.0" mnemonicParsing="false" onAction="#searchStandard" prefHeight="34.0" prefWidth="191.0" style="-fx-background-color: #ffdb59;" text="Search" textFill="#ff5757">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="alert_lbl" alignment="CENTER" layoutX="152.0" layoutY="31.0" prefHeight="21.0" prefWidth="392.0" text=" " textFill="#e40c0c">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Basic">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #faf5e4;" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="80.0" text="Find the rental autoCamper" textFill="#ff5757">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="171.0" fitWidth="184.0" layoutX="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo4.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

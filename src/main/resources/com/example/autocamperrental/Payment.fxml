@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="594.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autocamperrental.Payment">
+   <children>
+      <Pane layoutX="-7.0" layoutY="169.0" prefHeight="301.0" prefWidth="841.0">
+         <children>
+            <TextField layoutX="33.0" layoutY="164.0" />
+            <ImageView fitHeight="116.0" fitWidth="250.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../credit.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="132.0" text="Booking summary" />
+         </children>
+      </Pane>
+      <Label layoutX="31.0" layoutY="83.0" text="Payment" textFill="#ff5757">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="136.0" text="Choose a payment method" />
+   </children>
+</AnchorPane>
